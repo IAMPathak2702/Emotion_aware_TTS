@@ -17,7 +17,7 @@ EMOTION_FILE_COUNTS = {
 HPARAMS = {
     'training_files': os.path.join(BASE_DIR, 'metadata.csv'),
     'val_files': os.path.join(BASE_DIR, 'metadata.csv'),  # Use a separate validation set in practice
-    'epochs': 50,
+    'epochs': 10,
     'batch_size': 32,
     'learning_rate': 1e-4,
     'sampling_rate': 22050,

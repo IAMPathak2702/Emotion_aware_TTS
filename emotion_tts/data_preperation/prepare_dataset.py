@@ -4,7 +4,7 @@ from emotion_tts.config import DATA_DIR, PROCESSED_DATA_DIR, EMOTIONS
 
 def prepare_dataset():
     for emotion in EMOTIONS:
-        src_dir = os.path.join(DATA_DIR, f'bea_{emotion.lower()}')
+        src_dir = os.path.join(DATA_DIR, f'bea_{emotion}')
         dst_dir = os.path.join(PROCESSED_DATA_DIR, emotion)
         os.makedirs(dst_dir, exist_ok=True)
         
